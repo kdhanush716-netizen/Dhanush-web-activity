@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243044; }
+.header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; background: linear-gradient(115deg, #142b55, #2867a5); padding: 12px; }
+.header h1 { margin: 0 0 7px; font-size: 30px; letter-spacing: 2px; }
+.header p { margin: 0; font-size: 14px; letter-spacing: 1px; color: #e3efff; }
+.nav-page { min-height: 100vh; background: #f0f4fa; padding: 24px 15px; }
+.nav-page h2 { margin: 0 0 22px; color: #18345f; font-size: 19px; text-align: center; }
+.nav-links { display: flex; flex-direction: column; gap: 10px; }
+.nav-links a { display: block; padding: 13px 12px; color: #203552; background: white; border-left: 4px solid #3b78b8; border-radius: 5px; text-decoration: none; font-size: 14px; font-weight: bold; transition: .2s; }
+.nav-links a:hover, .nav-links a:focus { background: #245b91; color: white; }
+.content-page { min-height: 100vh; padding: 38px 42px; background: #fff; }
+.content-page h2 { color: #1c4778; font-size: 28px; margin: 0 0 14px; }
+.content-page p { line-height: 1.7; font-size: 16px; }
+.hero { padding: 28px; background: #edf5ff; border-radius: 12px; border: 1px solid #d7e7f8; }
+.info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; margin-top: 22px; }
+.info-card { padding: 17px; border-radius: 9px; background: #f6f8fb; border: 1px solid #e5eaf1; }
+.info-card h3 { margin: 0 0 8px; color: #245b91; }
+.student { margin-top: 30px; padding-top: 12px; border-top: 1px solid #e2e7ee; color: #65748a; font-size: 13px !important; }
+@media (max-width: 650px) { .content-page { padding: 24px 18px; } .info-grid { grid-template-columns: 1fr; } }
